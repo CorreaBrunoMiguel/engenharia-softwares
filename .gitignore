@@ -1,0 +1,22 @@
+# Dependências
+**/node_modules/
+
+# Build
+**/dist/
+**/build/
+**/.next/
+**/.turbo/
+**/.cache/
+
+# Ambientes
+.env
+.env.*
+
+# Logs
+**/*.log
+
+# SO / IDE
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/

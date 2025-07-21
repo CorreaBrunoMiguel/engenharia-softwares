@@ -1,0 +1,54 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-family: "Monteserrat", sans-serif;
+    font-size: 1.6rem;
+    line-height: 1.4;
+    color: #404040;
+}
+
+main {
+    display: flex;
+    gap: 3rem;
+    /* flex-direction: [row] / row-reverse / column / column-reverse */
+    /* flex-wrap: [no-wrap] / wrap */
+    /* flex-flow: flex-direction flex-wrap => propriedade major */
+
+}
+
+section {
+    /* flex-basis: 15rem;
+    flex-grow: 1; */
+    flex: 1;
+}
+
+section:first-child {
+    /* flex-basis: especifica o tamanho mínimo do item, a propriedade flex-wrap do pai influencia o resultado */
+    background-color: rgb(219, 173, 165);
+}
+
+section:nth-child(2) {
+    /* flex-grow: fator de crescimento do item  quando houver espaço suficiente para crescimento, o valor especificado será a proporcional a soma de todos os filhos que especificarem o grow*/
+    background-color: rgb(215, 216, 138);
+    flex: 2;
+}
+
+section:last-child {
+    background-color: rgb(136, 202, 180);
+}
+
+h1 {
+    font-size: 3.32rem;
+}
+
+h2 {
+    font-size: 2.76rem;
+}

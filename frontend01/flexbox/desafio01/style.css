@@ -1,0 +1,49 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-family: 'Monteserrat', sans-serif;
+    font-size: 1.6rem;
+    line-height: 1.4;
+    color: #404040;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 40px;
+}
+
+.apresentacao {
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    gap: 10px;
+}
+
+.preco-condicoes {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.titulo {
+    text-align: center;
+}
+
+.titulo::first-letter {
+    font-size: 180%;
+    font-weight: 600;
+}
+
+.blue-color {
+    color: rgb(111, 204, 235);
+}

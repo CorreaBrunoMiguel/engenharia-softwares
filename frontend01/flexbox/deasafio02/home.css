@@ -1,10 +1,11 @@
-/* Sistema de Tamanhos - https://typescale.com/ 
+/* Sistema de Tamanhos - https://typescale.com/
 
 Fontes - Minor Third - 1.200 - Em PX
 4.4 - 5.4 - 6.4 - 7.7 - 9.2 - 11.1 - 13.3 - 16 - 19.2 - 23 - 27.6 - 33.2 - 39.8 - 47.8 - 57.3 - 68.8 - 82.6
 
 Espaçamentos - Major Third - 1.250 - Em PX
-2.1 - 2.7 - 3.3 - 4.2 - 5.2 - 6.5 - 8.2 - 10.2 - 12.8 - 16 - 20 - 25 - 31.2 - 39 - 48.8 - 61 - 76.3 - 95.4 - 119.2
+2.1 - 2.7 - 3.3 - 4.2 - 5.2 - 6.5 - 8.2 - 10.2 - 12.8 - 16
+20 - 25 - 31.2 - 39 - 48.8 - 61 - 76.3 - 95.4 - 119.2
 
 */
 
@@ -93,6 +94,7 @@ input::placeholder {
 .botao {
   display: inline-block;
   font-size: 2.4rem;
+  text-align: center;
   font-weight: 700;
   text-decoration: none;
   border-radius: 3rem;
@@ -133,6 +135,10 @@ input::placeholder {
 /* Cabeçalho */
 
 .cabecalho {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 2.7rem;
   position: sticky;
   z-index: 9999;
   top: 0;
@@ -142,10 +148,43 @@ input::placeholder {
   box-shadow: 0 0.21rem 0.4rem rgba(0, 0, 0, 0.1);
 }
 
-/* Temporário */
-nav {
-  display: none;
+nav ul {
+  display: flex;
+  align-items: center;
+  gap: 2.1rem;
 }
+
+.contem-filhos {
+  position: relative;
+}
+
+.contem-filhos ul {
+  display: none;
+  flex-flow: column;
+  align-items: stretch;
+  gap: 0;
+  width: max-content;
+  position: absolute;
+  right: 0;
+  background-color: white;
+  padding: .41rem 0;
+  border-radius: 2.7rem;
+  box-shadow: 0 .21rem .4rem rgba(0, 0, 0, 0.1), inset 0 0 .8rem .1rem rgba(0, 0, 0, 0.15);
+}
+
+.contem-filhos:hover ul {
+  display: flex;
+}
+
+.contem-filhos ul li {
+  border-bottom: solid .7px rgba(0, 0, 0, 0.144);
+  padding: .41rem 1.8rem;
+}
+
+.contem-filhos ul li:last-child {
+  border: none;
+}
+
 
 .item-lista-cabecalho a {
   color: #112e61;
@@ -161,8 +200,10 @@ nav {
 }
 
 .item-lista-cabecalho.contem-filhos::after {
-  content: "\2bc6";
+  content: "\25BC";
 }
+
+
 
 /* Seção Hero */
 
@@ -183,12 +224,32 @@ nav {
   background-image: none;
 }
 
+.container-hero {
+  display: flex;
+  gap: 2.8rem;
+  align-items: center;
+}
+
 .iframe-video {
-  display: none;
+  width: 50rem;
   aspect-ratio: 16/9;
-  width: 42rem;
+  flex: 1;
   border-radius: 2.5rem;
 }
+
+.hero-coluna {
+  display: flex;
+  flex-flow: column;
+  flex: 3;
+  gap: 2.3rem;
+}
+
+.hero-botoes {
+  display: flex;
+  flex-flow: column;
+  gap: 1.3rem;
+}
+
 
 /* Seção Conteúdos Gratuitos */
 
@@ -370,9 +431,11 @@ nav {
 .oquefalam-carrossel-img--1 {
   background-image: url(https://i3.ytimg.com/vi/N_EZD04zmrw/hqdefault.jpg);
 }
+
 .oquefalam-carrossel-img--2 {
   background-image: url(https://i3.ytimg.com/vi/auqWeBJLJHY/hqdefault.jpg);
 }
+
 .oquefalam-carrossel-img--3 {
   background-image: url(https://i3.ytimg.com/vi/FD79IpCaM1Y/hqdefault.jpg);
 }

@@ -1,49 +1,168 @@
 * {
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
 }
 
 html {
-    font-size: 62.5%;
+  /* font-size: 10px; */
+  font-size: 62.5%;
 }
 
 body {
-    font-family: 'Monteserrat', sans-serif;
-    font-size: 1.6rem;
-    line-height: 1.4;
-    color: #404040;
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.8rem;
+  line-height: 1.4;
 }
 
-.container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin: 40px;
+main {
+  display: flex;
+  flex-flow: column;
+  gap: 6.1rem;
+  padding: 2.4rem;
 }
 
-.apresentacao {
-    width: 100%;
-    display: flex;
-    justify-content: space-evenly;
-    gap: 10px;
+h1 {
+  text-align: center;
+  font-size: 4.5rem;
+  line-height: 1;
 }
 
-.preco-condicoes {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
+h1::first-letter {
+  font-size: 6.4rem;
 }
 
-.titulo {
-    text-align: center;
+h2 {
+  font-size: 3.2rem;
+  line-height: 1.1;
 }
 
-.titulo::first-letter {
-    font-size: 180%;
-    font-weight: 600;
+h3 {
+  font-size: 2.4rem;
+  line-height: 1.2;
 }
 
-.blue-color {
-    color: rgb(111, 204, 235);
+figure {
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+}
+
+figure img {
+  width: 30rem;
+}
+
+figcaption {
+  font-size: 1.2rem;
+  font-style: italic;
+}
+
+/* LVHA */
+
+a:link,
+a:visited {
+  display: inline-block;
+  color: #c44105;
+  font-size: 2.4rem;
+  font-weight: 700;
+  text-decoration: double;
+  text-decoration-line: underline;
+}
+
+a:hover,
+a:active {
+  color: #0588c4;
+}
+
+ul {
+  margin-left: 2.4rem;
+}
+
+li {
+  color: #035276;
+  font-style: italic;
+}
+
+
+hr {
+  display: none;
+}
+
+section {
+  display: flex;
+  flex-flow: column;
+  gap: 3.9rem;
+  align-items: center;
+}
+
+.realce-h1 {
+  color: #0588c4;
+}
+
+.realce-p,
+p strong {
+  color: #0588c4;
+  font-weight: 700;
+}
+
+.realce-italico {
+  color: #0588c4;
+  font-style: italic;
+}
+
+.realce-underline {
+  color: #0588c4;
+  text-decoration: underline;
+}
+
+.div-condicoes {
+  display: inline-block;
+  background-color: #035276;
+  color: #fff;
+  box-shadow: 0 0 1.6rem 0.4rem rgba(0, 0, 0, 0.15);
+  padding: 2.4rem 3.2rem;
+  border-radius: 2rem;
+}
+
+.div-condicoes .realce-italico,
+.div-condicoes .realce-underline {
+  color: #78d4ff;
+}
+
+.img-wpp {
+  position: fixed;
+  top: 1rem;
+  right: 1rem;
+  width: 8.5rem;
+}
+
+.container-figure {
+  display: flex;
+  justify-content: center;
+  gap: 4.88rem;
+}
+
+.container-precocondicoes {
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  gap: 3.12rem;
+}
+
+.container-preco,
+.div-condicoes {
+  display: flex;
+  flex-flow: column;
+  gap: 2rem;
+}
+
+.container-listas {
+  display: flex;
+  gap: 3.9rem;
+}
+
+.container-lista {
+  display: flex;
+  flex-flow: column;
+  gap: 2rem;
 }

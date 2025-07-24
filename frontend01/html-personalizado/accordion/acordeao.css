@@ -1,0 +1,85 @@
+/* Ajustes Iniciais */
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-family: "Montserrat", sans-serif;
+    color: #030303;
+    background-color: #f8f8f8;
+    height: 100dvh;
+    line-height: 1.6;
+    font-size: 1.6rem;
+}
+
+/* Acordeão */
+
+.acordeao {
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    max-width: 90rem;
+    justify-content: center;
+    align-items: center;
+    gap: 2.4rem;
+    margin: 3.5rem auto;
+    border: .05rem solid black;
+    border-radius: 2rem;
+    box-shadow: .4rem .4rem black;
+    padding: 2rem 0;
+}
+
+.acordeao-item {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 90%;
+    max-width: 80rem;
+
+    & button {
+        display: flex;
+        justify-content: space-between;
+        padding: .6rem 2rem;
+        border-radius: 1.5rem;
+        border: 0;
+        box-shadow: .3rem .3rem black;
+        font-size: 2rem;
+        letter-spacing: .2rem;
+        cursor: pointer;
+        transition: background-color 0.3s ease, transform 0.2s ease;
+
+        &:hover {
+            background-color: antiquewhite;
+            border: .06rem solid black;
+            transform: scale(1.01);
+        }
+
+        &::after {
+            content: "▼";
+        }
+    }
+
+    & .acordeao-content {
+        margin-top: .5rem;
+        margin-left: .4rem;
+        padding: 1.5rem;
+        border-left: .1rem solid black;
+        border-right: .1rem solid black;
+        border-bottom: .1rem solid black;
+        border-radius: .9rem;
+        background-color: #e8f8f8;
+
+        & p {
+            font-weight: 500;
+            font-size: 1.6rem;
+        }
+    }
+
+}

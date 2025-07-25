@@ -21,65 +21,76 @@ body {
 
 /* Acordeão */
 
-.acordeao {
-    display: flex;
-    flex-direction: column;
-    width: 90%;
-    max-width: 90rem;
-    justify-content: center;
-    align-items: center;
-    gap: 2.4rem;
-    margin: 3.5rem auto;
-    border: .05rem solid black;
-    border-radius: 2rem;
-    box-shadow: .4rem .4rem black;
-    padding: 2rem 0;
+section {
+    padding: 6.1rem;
 }
 
-.acordeao-item {
+.acordeao {
     display: flex;
-    flex-direction: column;
-    justify-content: center;
-    width: 90%;
-    max-width: 80rem;
+    flex-flow: column;
+    gap: 2.4rem;
 
-    & button {
+    .item {
         display: flex;
-        justify-content: space-between;
-        padding: .6rem 2rem;
-        border-radius: 1.5rem;
-        border: 0;
-        box-shadow: .3rem .3rem black;
-        font-size: 2rem;
-        letter-spacing: .2rem;
-        cursor: pointer;
-        transition: background-color 0.3s ease, transform 0.2s ease;
+        flex-flow: column;
 
-        &:hover {
-            background-color: antiquewhite;
-            border: .06rem solid black;
-            transform: scale(1.01);
+        &.aberto {
+
+            .cabecalho {
+                background-color: rgba(36, 36, 161);
+                color: #f8f8f8;
+                border-bottom-right-radius: 0;
+                border-bottom-left-radius: 0;
+
+                &::after {
+                    content: "\25b2";
+                }
+
+                &:hover {
+                    background-color: rgba(36, 36, 161, 0.89);
+                }
+
+            }
+
+            .conteudo {
+                display: flex;
+                flex-flow: column;
+                gap: 1.6rem;
+                text-align: justify;
+                text-indent: 2.5rem;
+                line-height: 1.6;
+                padding: 1.6rem 2rem;
+                background-color: rgba(36, 36, 161, 0.164);
+                border-bottom-left-radius: 3rem;
+                border-bottom-right-radius: 3rem;
+                transition: background-color .4s ease;
+            }
         }
 
-        &::after {
-            content: "▼";
+        .cabecalho {
+            display: flex;
+            justify-content: space-between;
+            padding: 1.6rem 2rem;
+            box-shadow: 0 0 .7rem rgba(0, 0, 0, 0.24);
+            border-radius: 3rem;
+            font-size: 2rem;
+            background-color: #94eedf28;
+
+            &::after {
+                content: "\25BC";
+            }
+
+            &:hover {
+                background-color: #94eedfb2;
+                box-shadow: 0 0 .7rem rgba(0, 0, 0, 0.44);
+                cursor: pointer;
+            }
+        }
+
+        .conteudo {
+            height: 0;
+            overflow: hidden;
+            transition: height .4s ease;
         }
     }
-
-    & .acordeao-content {
-        margin-top: .5rem;
-        margin-left: .4rem;
-        padding: 1.5rem;
-        border-left: .1rem solid black;
-        border-right: .1rem solid black;
-        border-bottom: .1rem solid black;
-        border-radius: .9rem;
-        background-color: #e8f8f8;
-
-        & p {
-            font-weight: 500;
-            font-size: 1.6rem;
-        }
-    }
-
 }

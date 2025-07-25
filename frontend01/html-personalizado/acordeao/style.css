@@ -1,0 +1,96 @@
+/* Reset & base */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+    /* 1rem = 10px */
+}
+
+body {
+    font-family: "Montserrat", sans-serif;
+    font-size: 1.6rem;
+    /* 16px */
+    line-height: 1.4;
+    color: #333333;
+    background-color: #F9FAFB;
+}
+
+/* Acordeão */
+section {
+    padding: 6.1rem;
+}
+
+.acordeao {
+    display: flex;
+    flex-direction: column;
+    gap: 1.6rem;
+
+    .item {
+        .cabecalho {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            font-size: 1.92rem;
+            font-weight: 700;
+            padding: 2rem 3rem;
+            border-radius: 3.3rem;
+            background-color: #E3E8F1;
+            color: #1F2937;
+            box-shadow: 0 0 0.65rem rgba(0, 0, 0, 0.1);
+            transition: background-color 0.3s ease, border-radius 0.3s ease, color 0.3s ease;
+
+            &:hover {
+                background-color: #D0D9E8;
+                cursor: pointer;
+            }
+
+            &::after {
+                content: "\25BC";
+                /* Seta para baixo */
+                color: #4F8EF7;
+                font-weight: bold;
+            }
+        }
+
+        .conteudo {
+            display: none;
+        }
+
+        &.aberto {
+            .cabecalho {
+                background-color: #4F8EF7;
+                color: #F9FAFB;
+                border-bottom-left-radius: 0;
+                border-bottom-right-radius: 0;
+
+                &::after {
+                    content: "\25B2";
+                    /* Seta para cima */
+                    color: #F9FAFB;
+                }
+            }
+
+            .conteudo {
+                display: flex;
+                flex-flow: column;
+                justify-content: ;
+                gap: 1.3rem;
+                padding: 2rem 3rem;
+                background-color: #F9FAFB;
+                color: #333333;
+                box-shadow: 0 0 0.65rem rgba(0, 0, 0, 0.1);
+                border-bottom-left-radius: 3.3rem;
+                border-bottom-right-radius: 3.3rem;
+                text-align: justify;
+                text-indent: 2.4rem;
+                line-height: 1.6;
+                font-size: 1.6rem;
+                font-family: "Georgia";
+            }
+        }
+    }
+}

@@ -1,3 +1,9 @@
 document.addEventListener('DOMContentLoaded', () => {
-  console.log('DOM está pronto');
+  const modal = document.getElementById('pop-up-modal');
+
+  const botaoShowPopUp = document.getElementById('btn-modal');
+
+  botaoShowPopUp.addEventListener('click', () => {
+    modal.style.display = 'flex';
+  });
 });

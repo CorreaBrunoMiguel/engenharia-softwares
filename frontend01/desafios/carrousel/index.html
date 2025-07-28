@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Carrossel de Imagens</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <main>
+      <section class="carousel" aria-label="Galeria de Imagens">
+        <div class="carousel__track-container">
+          <ul class="carousel__track">
+            <li class="carousel__slide current-slide">
+              <img src="image/img1.jpg" alt="imagem 01" loading="lazy" />
+            </li>
+            <li class="carousel__slide">
+              <img src="image/img2.jpg" alt="imagem 02" loading="lazy" />
+            </li>
+            <li class="carousel__slide">
+              <img src="image/img3.jpg" alt="imagem 03" loading="lazy" />
+            </li>
+            <li class="carousel__slide">
+              <img src="image/img4.jpg" alt="imagem 04" loading="lazy" />
+            </li>
+            <li class="carousel__slide">
+              <img src="image/img5.jpg" alt="imagem 05" loading="lazy" />
+            </li>
+          </ul>
+        </div>
+
+        <!-- Controles -->
+        <button class="carousel__button carousel__button--left" aria-label="Slide anterior">
+          &#10094;
+        </button>
+        <button class="carousel__button carousel__button--right" aria-label="Próximo slide">
+          &#10095;
+        </button>
+
+        <!-- Indicadores -->
+        <div class="carousel__nav">
+          <button class="carousel__indicator current-slide" aria-label="Slide 1"></button>
+          <button class="carousel__indicator" aria-label="Slide 2"></button>
+          <button class="carousel__indicator" aria-label="Slide 3"></button>
+          <button class="carousel__indicator" aria-label="Slide 4"></button>
+          <button class="carousel__indicator" aria-label="Slide 5"></button>
+        </div>
+      </section>
+    </main>
+
+    <script src="script.js"></script>
+  </body>
+</html>

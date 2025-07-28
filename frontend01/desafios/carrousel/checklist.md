@@ -2,7 +2,7 @@
 
 ## Estrutura
 
-- [ ] HTML semântico e organizado
+- [x] HTML semântico e organizado
 - [ ] Carrossel encapsulado em container próprio
 - [ ] Inclusão de 5 imagens no total
 

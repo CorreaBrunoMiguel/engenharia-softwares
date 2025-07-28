@@ -3,8 +3,8 @@
 ## Estrutura
 
 - [x] HTML semântico e organizado
-- [ ] Carrossel encapsulado em container próprio
-- [ ] Inclusão de 5 imagens no total
+- [x] Carrossel encapsulado em container próprio
+- [x] Inclusão de 5 imagens no total
 
 ## Funcionalidade
 

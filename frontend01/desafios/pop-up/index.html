@@ -4,11 +4,40 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Pop-up</title>
-
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <h1>Teste</h1>
+    <div class="container-pop-up">
+      <button
+        class="btn-show-popup"
+        id="btn-modal"
+        aria-haspopup="dialog"
+        aria-controls="pop-up-modal"
+      >
+        Mostrar
+      </button>
+    </div>
+
+    <!-- Estrutura do pop-up -->
+    <div class="modal" id="pop-up-modal" role="dialog" aria-modal="true" hidden>
+      <div class="modal-container">
+        <div class="modal-header">
+          <h3>Título</h3>
+          <button class="btn-close-popup" aria-label="Fechar pop-up">X</button>
+        </div>
+        <div class="modal-content">
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum veniam commodi amet
+            libero ipsum dicta, odio quisquam eveniet blanditiis. Similique veritatis culpa dolore
+            doloremque dolor rem obcaecati commodi quisquam sunt quasi voluptates, impedit omnis!
+            Non, quisquam atque ducimus earum quasi accusantium ab quos nihil aut rem soluta,
+            quibusdam dicta perspiciatis, numquam accusamus vero. Perspiciatis, vitae consectetur.
+            Officia error quisquam a!
+          </p>
+        </div>
+      </div>
+    </div>
+
     <script src="script.js"></script>
   </body>
 </html>

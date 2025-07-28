@@ -83,3 +83,64 @@ Essa malha é formada por:
 </p>
 
 ## 🧠 7. Como o Grid posiciona os itens?
+
+Por padrão, os itens são inseridos da esquerda para a direita, e quebram para a próxima linha quando necessário.
+
+Mas você pode \*\*posicionar manualmente com:
+
+```css
+.item {
+  grid-column: 2/4;
+  grid-row: 1/3;
+}
+```
+
+Significa:
+
+- vai da coluna 2 até amtes da 4 (ou seja, ocupa colunas 2 e 3)
+- vai da linha 1 até antes da 3 (ou seja, ocupa linhas 1 e 2)
+
+## 🔤 8. Nomes para áreas da grade
+
+Você pode nomear áreas com `grid-template-areas`:
+
+```css
+.container {
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+  grid-template-rows: auto 1fr auto;
+  grid-templates-areas: 'header header' 'sidebar main' 'footer footer';
+}
+.header {
+  grid-area: header;
+}
+.sidebar {
+  gride-area: sidebar;
+}
+```
+
+## 🧭 9. Auto-placement vs. manual
+
+O Grid tenta **colocar os elementos automaticamente**, mas você pode assunmir controle total com:
+
+- `grid-column`
+- `grid-row`
+- `grid-area`
+
+## 📏 10. Gaps, alinhamento e responsividade
+
+```css
+.container {
+  gap: 1rem;
+  justify-items: center;
+  align-items: stretch;
+}
+```
+
+Responsividade com Grid é natural. Exemplo:
+
+```css
+grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+```
+
+Isso cria **colunas flexíveis**, com no mínimo 200px, que se reorganizam automaticamente em telas menores.

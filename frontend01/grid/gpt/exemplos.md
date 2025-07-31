@@ -2,11 +2,11 @@
 
 ## 🧪 Exemplo 1: Painel de Cards Responsivo
 
-### 🎯 Objetivo:
+🎯 Objetivo:
 
 Criar uma grade de **cards** que se ajusta conforme a largura da tela.
 
-#### 🧱 HTML
+🧱 HTML
 
 ```html
 <section class="card-grid">
@@ -18,7 +18,7 @@ Criar uma grade de **cards** que se ajusta conforme a largura da tela.
 </section>
 ```
 
-#### 🎨 CSS
+🎨 CSS
 
 ```css
 .card-grid {
@@ -42,20 +42,20 @@ Criar uma grade de **cards** que se ajusta conforme a largura da tela.
 - `auto-fit + minmax(200px, 1fr)` faz com que o número de colunas se ajuste automaticamente, com no mínimo 200px cada.
 - Layout se adapta a diferentes telas!
 
-#### 📐 Resultado
+📐 Resultado
 
 <p align="center">
     <img src="./image/ex01-desktop.png">
 </p>
-<p>* Todos os resultados serão especificoas para telas com 1920px de largura.</p>
+<p>* Todos os resultados serão especificos para telas com 1920px de largura.</p>
 
 ## Exemplo 2: Layout Completo com Header, SIdebar e Main
 
-### 🎯 Objetivo:
+🎯 Objetivo:
 
 Criar um layout tradicional de páginas com **cabeçalho, barra lateral,conteúdo principal e raodapé**, usando `grid-template-areas`.
 
-#### 🧱 HTML
+🧱 HTML
 
 ```html
 <div class="layout">
@@ -66,7 +66,7 @@ Criar um layout tradicional de páginas com **cabeçalho, barra lateral,conteúd
 </div>
 ```
 
-#### 🎨 CSS
+🎨 CSS
 
 ```css
 .layout {
@@ -112,9 +112,58 @@ Criar um layout tradicional de páginas com **cabeçalho, barra lateral,conteúd
 - `grid-template-areas` define uma estrutura de layout visual clara.
 - Fácil de reorganizar e ler, ideal para páginas completas.
 
-#### 📐 Resultado
+📐 Resultado
 
 <p align="center">
     <img src="./image/ex2.png">
 </p>
-<p>* Todos os resultados serão especificoas para telas com 1920px de largura.</p>
+<p>* Todos os resultados serão especificos para telas com 1920px de largura.</p>
+
+## Exemplo 3: Galeria de Imagens com Grid Fluido
+
+🎯 Objetivo:
+
+Criar uma **galeria de imagens** responsiva que reorganiza automaticamente com base no tamanho da tela.
+
+🧱 HTML
+
+```html
+<section class="gallery">
+  <img src="img1.jpg" alt="Imagen 1" />
+  <img src="img2.jpg" alt="Imagen 2" />
+  <img src="img3.jpg" alt="Imagen 3" />
+  <img src="img4.jpg" alt="Imagen 4" />
+  <img src="img5.jpg" alt="Imagen 5" />
+</section>
+```
+
+🎨 CSS
+
+```css
+.gallery {
+  display: grid;
+  gap: 0.5rem;
+  grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+  padding: 1rem;
+
+  img {
+    width: 100%;
+    height: auto;
+    border-radius: 0.5rem;
+    object-fit: cover;
+    display: block;
+  }
+}
+```
+
+🔎 Explicação:
+
+- `auto-fill` preenche o espaço com o máximo de colunas possíveis.
+- `minmax(150px 1fr) impede que as imagens fiquem pequenas demais
+
+📐 Resultado
+
+<p align="center">
+    <img src="./image/ex3.png">
+</p>
+<p>* Todos os resultados serão especificos para telas com 1920px de largura.</p>

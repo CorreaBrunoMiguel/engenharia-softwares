@@ -23,3 +23,9 @@ Construir uma página web responsiva para um portfólio pessoal, utilizando **CS
 - Responsividade com media queries.
 - Imagens responsivas (usar `max-width: 100%` e `height: auto`).
 - Formulários funcional (não precisa enviar dados, mas com validação básica de HTML5).
+
+## 📌 Figma
+
+<p align="center">
+  <img src="figma.png">
+</p>

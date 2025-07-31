@@ -111,3 +111,10 @@ Criar um layout tradicional de páginas com **cabeçalho, barra lateral,conteúd
 
 - `grid-template-areas` define uma estrutura de layout visual clara.
 - Fácil de reorganizar e ler, ideal para páginas completas.
+
+#### 📐 Resultado
+
+<p align="center">
+    <img src="./image/ex2.png">
+</p>
+<p>* Todos os resultados serão especificoas para telas com 1920px de largura.</p>

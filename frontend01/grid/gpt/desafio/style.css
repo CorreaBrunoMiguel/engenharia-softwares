@@ -1,0 +1,98 @@
+/* Padrão */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-family: "Montserrat", sans-serif;
+    font-size: 1.6rem;
+    color: #202020;
+}
+
+/* Layout */
+.layout {
+    display: grid;
+    grid-template-areas: "header" "main" "footer";
+    grid-template-rows: auto 1fr auto;
+    min-height: 100vh;
+    margin: 1rem 5rem;
+    align-content: center;
+    justify-content: center;
+    gap: 3rem;
+
+    header {
+        grid-area: header;
+    }
+
+    main {
+        grid-area: main;
+    }
+
+    footer {
+        grid-area: footer;
+    }
+}
+
+/* Cabeçalho */
+.cabecalho {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2rem 0;
+
+    .menu {
+        font-size: 2rem;
+        display: flex;
+        gap: 2rem;
+
+        a {
+            text-decoration: none;
+            color: inherit;
+
+            &:hover {
+                cursor: pointer;
+            }
+        }
+    }
+}
+
+/* Container */
+.container {
+    display: flex;
+    flex-flow: column;
+    gap: 2rem;
+
+    .hero {
+        display: flex;
+        align-items: center;
+        gap: 2.5rem;
+
+        .about {
+            flex: 2;
+            align-self: flex-start;
+
+            h2 {
+                margin-bottom: 1rem;
+            }
+
+            p {
+                text-align: justify;
+                text-indent: 1rem;
+            }
+        }
+
+        img {
+            flex: 1;
+            max-width: 20rem;
+            height: auto;
+            border-radius: 50%;
+            border: .8rem solid blue;
+        }
+    }
+}

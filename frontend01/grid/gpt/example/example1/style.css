@@ -1,0 +1,15 @@
+.card-grid {
+    display: grid;
+    gap: 1rem;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    padding: 2rem;
+}
+
+.card {
+    background-color: #e2e8f0;
+    padding: 2rem;
+    text-align: center;
+    border-radius: 0.5rem;
+    font-weight: bold;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, .1);
+}

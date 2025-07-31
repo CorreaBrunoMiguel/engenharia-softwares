@@ -1,5 +1,7 @@
 ### 🧠 Quiz – CSS Grid (versão embaralhada)
 
+## NOTA: 100%
+
 **1. Qual propriedade define a quantidade e tamanho das colunas em um grid container?**
 
 - [ ] `grid-auto-flow`

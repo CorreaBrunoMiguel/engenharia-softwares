@@ -1,0 +1,115 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Exercício 05: Tabuleiro de Xadrez</title>
+
+    <style>
+      body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        min-height: 100vh;
+        background-color: antiquewhite;
+      }
+
+      .tabuleiro {
+        display: grid;
+        grid-template-columns: repeat(8, 70px);
+        grid-template-rows: repeat(8, 70px);
+        box-shadow: 0 0 10px 3px black;
+
+            div {
+                width: 70px;
+                height: 70px;
+            }
+
+            .casa-odd:nth-child(odd){
+                background-color: white;
+            }
+            .casa-odd:nth-child(even) {
+                background-color: black;
+            }
+            .casa-even:nth-child(even) {
+                background-color: white;
+            }
+            .casa-even:nth-child(odd){
+                background-color: black;
+            }
+        }
+
+
+
+    </style>
+  </head>
+  <body>
+      <div class="tabuleiro">
+        <div class="casa-odd"></div>
+        <div class="casa-odd"></div>
+        <div class="casa-odd"></div>
+        <div class="casa-odd"></div>
+        <div class="casa-odd"></div>
+        <div class="casa-odd"></div>
+        <div class="casa-odd"></div>
+        <div class="casa-odd"></div>
+        <div class="casa-even"></div>
+        <div class="casa-even"></div>
+        <div class="casa-even"></div>
+        <div class="casa-even"></div>
+        <div class="casa-even"></div>
+        <div class="casa-even"></div>
+        <div class="casa-even"></div>
+        <div class="casa-even"></div>
+        <div class="casa-odd"></div>
+        <div class="casa-odd"></div>
+        <div class="casa-odd"></div>
+        <div class="casa-odd"></div>
+        <div class="casa-odd"></div>
+        <div class="casa-odd"></div>
+        <div class="casa-odd"></div>
+        <div class="casa-odd"></div>
+        <div class="casa-even"></div>
+        <div class="casa-even"></div>
+        <div class="casa-even"></div>
+        <div class="casa-even"></div>
+        <div class="casa-even"></div>
+        <div class="casa-even"></div>
+        <div class="casa-even"></div>
+        <div class="casa-even"></div>
+        <div class="casa-odd"></div>
+        <div class="casa-odd"></div>
+        <div class="casa-odd"></div>
+        <div class="casa-odd"></div>
+        <div class="casa-odd"></div>
+        <div class="casa-odd"></div>
+        <div class="casa-odd"></div>
+        <div class="casa-odd"></div>
+        <div class="casa-even"></div>
+        <div class="casa-even"></div>
+        <div class="casa-even"></div>
+        <div class="casa-even"></div>
+        <div class="casa-even"></div>
+        <div class="casa-even"></div>
+        <div class="casa-even"></div>
+        <div class="casa-even"></div>
+        <div class="casa-odd"></div>
+        <div class="casa-odd"></div>
+        <div class="casa-odd"></div>
+        <div class="casa-odd"></div>
+        <div class="casa-odd"></div>
+        <div class="casa-odd"></div>
+        <div class="casa-odd"></div>
+        <div class="casa-odd"></div>
+        <div class="casa-even"></div>
+        <div class="casa-even"></div>
+        <div class="casa-even"></div>
+        <div class="casa-even"></div>
+        <div class="casa-even"></div>
+        <div class="casa-even"></div>
+        <div class="casa-even"></div>
+        <div class="casa-even"></div>
+      </div>
+    </div>
+  </body>
+</html>

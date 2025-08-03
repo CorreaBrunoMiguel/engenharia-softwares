@@ -72,3 +72,17 @@ footer footer
 <p align="center">
     <img src="../image/ex04-grid.png">
 </p>
+
+---
+
+## 5. Crie um Grid tipo tabuleiro de xadrez
+
+**Objetivo:** Usar Grid + nth-child para criar o padrão quadriculado de um tabuleiro 8x8
+
+- Crie 64 `div` dentro de uma `div.tabuleiro`.
+- Defina `display: grid` com 8 colunas e 8 linhas.
+- Intercale `black` e `white` usando `:nth-child(even)` e `:nth-child(odd)` ou similar.
+
+### Resposta
+
+<p align="center"><img src="../image/ex05-grid.png"></p>

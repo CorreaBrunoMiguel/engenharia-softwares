@@ -57,7 +57,10 @@
 **Objetivo:** Criar um layout com áreas nomeadas usando `grid-template-área`
 
 - Estrutura: header, sidebar, main, footer
-- Formato: `txt header header\nsidebar main\nfooter footer`
+- Formato: `
+header header
+sidebar main
+footer footer`
 
 - Defina as áreas e associe cada elemento com `grid-area`
 

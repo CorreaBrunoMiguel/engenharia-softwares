@@ -33,3 +33,21 @@
 <p align="center">
     <img src="../image/ex02-grid.png">
 </p>
+
+---
+
+## 3. Centeralize um item usando Grid
+
+**Objetivo:** Usar CSS Grid para centralizar um único item **horizontal e verticalmente**.
+
+- Use uma `div.container` com largura e altura fixas.
+- Dentro dela, um único `div.item` com 100x100px.
+- Use Grid para centralizar este item.
+
+### Resposta
+
+<p align="center">
+    <img src="../image/ex03-grid.png">
+</p>
+
+---

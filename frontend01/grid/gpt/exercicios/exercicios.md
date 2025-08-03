@@ -51,3 +51,18 @@
 </p>
 
 ---
+
+## 4. Use `grid-area` para nomear áreas
+
+**Objetivo:** Criar um layout com áreas nomeadas usando `grid-template-área`
+
+- Estrutura: header, sidebar, main, footer
+- Formato: `header header\nsidebar main\nfooter footer`
+
+- Defina as áreas e associe cada elemento com `grid-area`
+
+### Resposta
+
+<p align="center">
+    <img src="../image/ex04-grid.png">
+</p>

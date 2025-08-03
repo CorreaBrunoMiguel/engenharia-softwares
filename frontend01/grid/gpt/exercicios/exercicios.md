@@ -15,7 +15,9 @@
 ### Resposta
 
 <p align="center">
-    <img src="../image/ex1-grid.png">
+    <img src="../image/ex01-grid.png">
 </p>
 
 ---
+
+##

@@ -1,0 +1,60 @@
+* {
+    box-sizing: border-box;
+}
+
+.container {
+    overflow: hidden;
+    display: grid;
+    justify-self: center;
+    margin-top: 200px;
+    grid-template-columns: repeat(3, 100px);
+    gap: 20px;
+
+    .item {
+        font-size: large;
+        font-weight: 800;
+        color: white;
+        padding-top: 40px;
+        text-align: center;
+        width: 100px;
+        height: 100px;
+    }
+
+    .blue {
+        background-color: blue;
+    }
+
+    .red {
+        background-color: red;
+    }
+
+    .yellow {
+        background-color: yellow;
+        color: black;
+    }
+
+    .green {
+        background-color: green;
+    }
+
+    .purple {
+        background-color: purple;
+    }
+
+    .bronw {
+        background-color: brown;
+    }
+
+    .gold {
+        background-color: gold;
+        color: black;
+    }
+
+    .black {
+        background-color: black;
+    }
+
+    .orange {
+        background-color: orange;
+    }
+}

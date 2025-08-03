@@ -12,4 +12,10 @@
 
 📌 _Você deve usar `display: grid` e `grid-template-columns`._
 
+### Resposta
+
+<p align="center">
+    <img src="../image/ex1-grid.png">
+</p>
+
 ---

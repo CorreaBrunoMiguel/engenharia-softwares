@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Exercicio 04</title>
+    <style>
+      body {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-size: 2rem;
+      }
+      .container {
+        text-align: center;
+        height: 100vh;
+        width: 100vw;
+        display: grid;
+        grid-template-columns: 200px auto;
+        grid-template-rows: 1fr 5fr 1fr;
+        grid-template-areas: 'header header' 'sidebar main' 'footer footer';
+
+        header {
+          grid-area: header;
+          background-color: aquamarine;
+        }
+
+        aside {
+          grid-area: sidebar;
+          background-color: chartreuse;
+        }
+
+        main {
+          grid-area: main;
+          background-color: cadetblue;
+        }
+
+        footer {
+          grid-area: footer;
+          background-color: bisque;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <header>Header</header>
+      <aside>Sidebar</aside>
+      <main>Main</main>
+      <footer>Footer</footer>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,86 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Exercício 01: Grid 3x3</title>
+    <link rel="stylesheet" href="style.css" />
+    <style>
+      body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        min-height: 100vh;
+        background: #f5f5f5;
+        font-family: sans-serif;
+        font-size: 3rem;
+      }
+
+      .container {
+        display: grid;
+        grid-template-columns: 100px 100px 100px;
+        gap: 10px;
+
+        .item {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          height: 100px;
+          background-color: lightcoral;
+          color: white;
+          font-weight: bold;
+          border-radius: 6px;
+
+          &:nth-child(1) {
+            background-color: #e74c3c;
+          }
+
+          &:nth-child(2) {
+            background-color: #e67e22;
+          }
+
+          &:nth-child(3) {
+            background-color: #f1c40f;
+          }
+
+          &:nth-child(4) {
+            background-color: #2ecc8a;
+          }
+
+          &:nth-child(5) {
+            background-color: #1abc9c;
+          }
+
+          &:nth-child(6) {
+            background-color: #3498db;
+          }
+
+          &:nth-child(7) {
+            background-color: #9b59b6;
+          }
+
+          &:nth-child(8) {
+            background-color: #34495e;
+          }
+
+          &:nth-child(9) {
+            background-color: #7f8c8d;
+          }
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="item">1</div>
+      <div class="item">2</div>
+      <div class="item">3</div>
+      <div class="item">4</div>
+      <div class="item">5</div>
+      <div class="item">6</div>
+      <div class="item">7</div>
+      <div class="item">8</div>
+      <div class="item">9</div>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,47 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1.6rem;
+  line-height: 1.4;
+}
+
+h1 {
+  font-size: 4rem;
+  line-height: 1;
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+p {
+  color: #fff;
+  padding: 1rem;
+  text-indent: 2rem;
+  font-size: 1.6rem;
+  letter-spacing: 0.1rem;
+  margin: 1rem;
+  border-radius: 1rem;
+  background-image: linear-gradient(to right, blue, pink);
+  box-shadow: 0.2rem 0.2rem 0.4rem black;
+  transition: background-image ease 2s;
+}
+
+p:hover {
+  background-image: linear-gradient(to right, yellow, green);
+  color: black;
+  cursor: pointer;
+}
+
+p::first-letter {
+  text-transform: uppercase;
+  font-size: 3.5rem;
+  font-weight: bold;
+}

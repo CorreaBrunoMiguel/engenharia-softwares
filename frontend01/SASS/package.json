@@ -1,0 +1,17 @@
+{
+  "name": "sass",
+  "version": "1.0.0",
+  "description": "módulo de sass",
+  "main": "index.js",
+  "scripts": {
+    "watch:sass": "sass sass/main.scss css/style.css -w",
+    "compile:sass": "sass sass/main.scss css/style.css"
+  },
+  "keywords": [],
+  "author": "devCorrea",
+  "license": "ISC",
+  "type": "commonjs",
+  "dependencies": {
+    "sass": "^1.69.3"
+  }
+}

@@ -1,0 +1,10 @@
+h1 {
+  font-size: 32px;
+  color: red;
+}
+
+@media screen and (max-width: 500px) {
+  h1 {
+    color: bllue;
+  }
+}
